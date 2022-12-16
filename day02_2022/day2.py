@@ -33,7 +33,7 @@ What would your total score be if everything goes exactly according to your stra
 
 
 
-def main():
+def part1():
     with open("day2.txt") as match:
         matches = match.readlines()
     free_points = 0
@@ -53,8 +53,6 @@ def main():
     print(free_points)
 
 
-if __name__ == '__main__':
-    main()
 
 """
 --- Part Two ---
@@ -111,6 +109,8 @@ def part2():
             free_points += 3
     print(free_points+win_pts)
 
-
-
-part2()
+def main():
+    part1()
+    part2()
+if __name__ == "__main__":
+    main()
